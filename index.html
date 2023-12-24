@@ -1,5 +1,52 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Redirecting to https://example.com/</title>
-<meta http-equiv="refresh" content="0; URL=https://example.com/">
-<link rel="canonical" href="https://example.com/">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pick your mood</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Adjust based on image size */
+  }
+  .gallery a {
+    width: 33.33%;
+    padding: 10px; /* Space between images */
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+  }
+  @media (max-width: 600px) {
+    .gallery a {
+      width: 50%; /* 2 images per row on smaller screens */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="gallery">
+  <!-- Replace # with your URLs and img/src with your image paths -->
+  <a href="#" target="_blank"><img src="sad.jpg" alt="Image 1"></a>
+  <a href="#" target="_blank"><img src="chill.jpg" alt="Image 2"></a>
+  <a href="#" target="_blank"><img src="happy.jpg" alt="Image 3"></a>
+  <a href="#" target="_blank"><img src="all.jpg" alt="Image 4"></a>
+  <a href="#" target="_blank"><img src="relax.jpg" alt="Image 5"></a>
+  <a href="#" target="_blank"><img src="energy.jpg" alt="Image 6"></a>
+</div>
+</body>
+</html>
+
